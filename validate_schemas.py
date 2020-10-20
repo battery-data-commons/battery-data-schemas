@@ -5,10 +5,13 @@ import os
 
 # Find all the schemas
 schema_path = os.path.abspath('schemas')
-schemas = glob.glob('{}/**/*.json'.format(schema_path), recursive=True)
+
+# Get a list of the schemas and formats assembled from schemas
+schemas = glob.glob(f'{schema_path}/**/*.json', recursive=True)
+formats = glob.glob(f'formats/*.json')
 
 # Loop through to make sure they are all valid
-for schema in schemas:
+for schema in schemas + formats:
     print('Checking {}...'.format(os.path.relpath(schema, '.')), end="")
 
     # Load in the schema
@@ -17,6 +20,6 @@ for schema in schemas:
 
     # Pull in the references
     validator = Draft7Validator(Draft7Validator.META_SCHEMA,
-                                resolver=RefResolver('file:///{}/'.format(schema_path), schema))
+                                resolver=RefResolver(f'file:///{schema_path}/', schema))
     validator.validate(schema)
     print('OK')

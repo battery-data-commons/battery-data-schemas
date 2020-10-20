@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "battery",
+  "description": "Description of design of a cell and how it was prepared",
+  "type": "object",
+  "properties": {
+    "design": {
+      "cathode": {
+        "$ref": "electrode.json#",
+        "description": "Design parameters for the positive electrode"
+      },
+      "anode": {
+        "$ref": "electrode.json#",
+        "description": "Design parameters for the negative electrode"
+      }
+    }
+  }
+}
