@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "electrode",
+  "description": "Description of an electrode of a battery system",
+  "properties": {
+    "chemistry": {
+      "type": "string",
+      "description": "High-level description of the chemistry of a battery. E.g., LFP for Lithium Iron Phosphate."
+    },
+    "composition": {
+      "description": "Composition of the electrode. Schema yet to be defined for this type"
+    },
+    "supplier": {
+      "type": "string",
+      "description": "Name of the supplier"
+    }
+  }
+}

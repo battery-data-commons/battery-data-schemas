@@ -1,0 +1,69 @@
+{
+    "preparation": {
+        "battery design": {
+            "constituents": {
+                "positive electrode": {
+                    "chemistry": "NCA",
+                    "composition": false,
+                    "supplier": false
+                },
+                "negative electrode": {
+                    "chemistry": "graphite",
+                    "composition": false,
+                    "supplier": false
+                },
+                "separator": {
+                    "chemistry": false,
+                    "composition": false,
+                    "supplier": "Celgard"
+                }
+            },
+
+            "electrode and cell design": {
+                "capacity": {
+                    "value": 1.5,
+                    "units": "Ah"
+                },
+                "porosity": {
+                    "value": 1.5,
+                    "units": "Ah"
+                }
+            },
+
+            "cell type": {
+                "type": "half-cell",
+                "form factor": "18650",
+                "manufacturer": "XX"
+
+            }
+        },
+        "name convention": {
+            "A": false
+        },
+        "formation": {
+            "A": false
+        },
+        "beginning of life characteristics": {
+            "A": false
+        },
+        "hardware": {
+            "A": false
+        },
+        "experimental design": {
+            "A": false
+        }
+    },
+    "testing": {
+        "protocol": {
+            "A": false
+        },
+        "data collection": {
+            "A": false
+        },
+        "postmortem": {
+            "A": false
+        }
+    }
+
+
+}
