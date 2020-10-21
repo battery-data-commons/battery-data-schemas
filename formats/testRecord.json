@@ -5,7 +5,13 @@
   "type": "object",
   "properties": {
     "preparation": {
-      "$ref": "battery.json#"
+      "$ref": "design.json#"
+    },
+    "testing": {
+      "cyclingProtocol": {
+        "$ref": "cyclingProtocol.json#"
+      }
     }
-  }
+  },
+  "additionalProperties": false
 }
